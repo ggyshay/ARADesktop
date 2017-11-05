@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARA M</title>
+
+  <script src="./public/p5.js"></script>
+  <script src="./public/sketch.js"></script>
+  <script src="./public/clock.js"></script>
+  <script src="./public/pad.js"></script>
+  <script src="./public/addons/p5.dom.js"></script>
+  <script src="./public/addons/p5.sound.js"></script>
+
+  <style>
+    body{
+      background-color: #313131;
+    }
+    #fileRef{
+      background-color: #04b921;
+      padding: 3px;
+      margin: 5px;
+      max-width: 100px;
+      border-radius: 5px;
+      text-transform: capitalize;
+      color:#2d2d2d
+    }
+    #fileRef:hover{
+      background-color: #046013;
+      padding: 3px;
+      margin: 5px;
+      max-width: 100px;
+      border-radius: 5px;
+      text-transform: capitalize;
+      color:#2d2d2d;
+      cursor: pointer;
+    }
+    #fileDisplay{
+      position: absolute;
+      left: 10px;
+      top:40px;
+      height: 200px;
+      width: 160px;
+      overflow-y: auto;
+      z-index: 1;
+    }
+    #defaultCanvas0{
+      position: absolute;;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+    }
+    #openBTN{
+      position: absolute;;
+      left: 150px;
+      top:5px;
+      background-color: #FF00FF;
+      color:#313131;
+      padding: 5px;
+      border-radius: 5px;
+
+    }
+    #openBTN:hover{
+      background-color: #AA00AA;
+      color:#313131;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div id = "openBTN">Browse Files</div>
+   <script type = "text/javascript">
+     require("./renderer.js")
+   </script>
+   <div id = "fileDisplay"></div>
+   <div id = "padDisplay"></div>
+</body>
+
+</html>
